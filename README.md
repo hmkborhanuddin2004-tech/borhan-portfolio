@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Muhammad Borhan Uddin - Official Developer Portfolio
+
+A high-performance, interactive personal portfolio website engineered with Next.js (App Router), TypeScript, Tailwind CSS, Three.js, and Framer Motion. Designed with custom 3D web graphics, strict state isolation, and zero hardcoded content.
+
+---
+
+## Architectural Highlights
+
+- **Isolated Content Configuration:** All portfolio data, project case studies, and contact endpoints are centralized in a single configuration schema (`src/config/site.config.ts`), ensuring presentation components remain purely declarative.
+- **Modern 3D Web Graphics:** Three.js and custom procedural shader meshes integrated seamlessly into the DOM flow with adaptive fallback for low-power mobile devices.
+- **Fluid Layout Transitions:** Framer Motion spring physics paired with responsive Tailwind CSS grid layouts.
+- **Optimized Asset Pipeline:** Next.js Image Optimization and static route generation for fast initial page load.
+
+---
+
+## Technical Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS, PostCSS
+- **Animation & 3D:** Three.js, Framer Motion, GSAP
+- **Icons:** Lucide React
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.x or Bun runtime
+- npm / pnpm / bun
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/hmkborhanuddin2004-tech/borhan-portfolio.git
+cd borhan-portfolio
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the platform.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To customize personal profile details, modify:
+`src/config/site.config.ts`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
